@@ -831,7 +831,7 @@
             const area = document.getElementById('codeArea');
             preview.style.display = preview.style.display === 'none' ? 'block' : 'none';
             area.value = preview.style.display === 'block'
-                ? generateHTML('${manager} - Система заселения гостей', '${manager}', Array.from(selectedAddresses.values()))
+                ? generateHTML('Имя менеджера - Система заселения гостей', 'Имя менеджера', Array.from(selectedAddresses.values()))
                 : '';
         }
 
