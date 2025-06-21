@@ -632,7 +632,7 @@
 </head>
 <body>
     <div class="header-block">
-        <h1>Система бронирования квартир</h1>
+        <h1>Система заселения гостей</h1>
         <h2>Менеджер: ${managerName}</h2>
     </div>
     <div class="container">
@@ -831,7 +831,7 @@
             const area = document.getElementById('codeArea');
             preview.style.display = preview.style.display === 'none' ? 'block' : 'none';
             area.value = preview.style.display === 'block'
-                ? generateHTML('Имя менеджера - Система бронирования квартир', 'Имя менеджера', Array.from(selectedAddresses.values()))
+                ? generateHTML('${manager} - Система заселения гостей', '${manager}', Array.from(selectedAddresses.values()))
                 : '';
         }
 
