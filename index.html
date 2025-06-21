@@ -207,14 +207,14 @@
         const selectedAddressesDiv = document.getElementById('selectedAddresses');
 
         const managersRaw = `
-ИЛЬЯ
-СОФИ
-ВИКТОРИЯ
-ЕКАТЕРИНА
-АРТЁМ
-САТИНА
-ВИТАЛИЙ
-АНВАР
+Илья
+Софи
+Виктория
+Екатерина
+Артём
+Сатина
+Виталий
+Анвар
 `;
 
         const addressesRaw = `
@@ -456,7 +456,7 @@
                 alert('Выберите менеджера и хотя бы один адрес.');
                 return;
             }
-            const title = `${manager} - Система бронирования квартир`;
+            const title = `${manager} - Система заселения гостей`;
             const content = generateHTML(title, manager, Array.from(selectedAddresses.values()));
             const fileName = sanitizeFileName(title) + '.html';
             const blob = new Blob([content], { type: 'text/html' });
